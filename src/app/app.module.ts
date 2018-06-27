@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {UsersService} from "./users.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {AppRoutingModule} from "./app-routing.module";
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
